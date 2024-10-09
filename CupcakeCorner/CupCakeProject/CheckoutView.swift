@@ -12,6 +12,7 @@ struct CheckoutView: View {
     
     @State private var confirmationMessage = ""
     @State private var showingMessage = false
+    @State private var isError = false
     
     func placeOrder() async {
         guard let encoded = try? JSONEncoder().encode(order) else {
@@ -37,9 +38,13 @@ struct CheckoutView: View {
             confirmationMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
             
             showingMessage = true
+            isError = false
             
         } catch {
             print("CheckOut failed: \(error.localizedDescription)")
+            confirmationMessage = "Failed to place order: \(error.localizedDescription)"
+            isError = true
+            showingMessage = true
         }
     }
     
@@ -74,7 +79,7 @@ struct CheckoutView: View {
         .navigationTitle("Check Out")
         .navigationBarTitleDisplayMode(.inline)
         .scrollBounceBehavior(.basedOnSize)
-        .alert("Thank you!", isPresented: $showingMessage) {
+        .alert(isError ? "Error" : "Thank you!", isPresented: $showingMessage) {
             Button("OK") { }
         } message: {
             Text(confirmationMessage)
