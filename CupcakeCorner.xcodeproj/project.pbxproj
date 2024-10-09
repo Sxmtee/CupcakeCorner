@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042AE3BA2CB581D000FE2744 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AE3B92CB581D000FE2744 /* CheckoutView.swift */; };
 		0441E7682CA5EC4A00A5AEC0 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E7672CA5EC4A00A5AEC0 /* CupcakeCornerApp.swift */; };
 		0441E76A2CA5EC4A00A5AEC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441E7692CA5EC4A00A5AEC0 /* ContentView.swift */; };
 		0441E76C2CA5EC4D00A5AEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0441E76B2CA5EC4D00A5AEC0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042AE3B92CB581D000FE2744 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		0441E7642CA5EC4A00A5AEC0 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0441E7672CA5EC4A00A5AEC0 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		0441E7692CA5EC4A00A5AEC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				0499DC532CA87327004170D9 /* Order.swift */,
 				0499DC572CA87427004170D9 /* MainView.swift */,
 				0499DC592CA878F5004170D9 /* AddressView.swift */,
+				042AE3B92CB581D000FE2744 /* CheckoutView.swift */,
 			);
 			path = CupCakeProject;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				0499DC4D2CA8630A004170D9 /* FormView.swift in Sources */,
 				0499DC582CA87427004170D9 /* MainView.swift in Sources */,
+				042AE3BA2CB581D000FE2744 /* CheckoutView.swift in Sources */,
 				0499DC4F2CA864AC004170D9 /* CodableConformance.swift in Sources */,
 				0499DC4B2CA86035004170D9 /* AsyncImages.swift in Sources */,
 				0441E76A2CA5EC4A00A5AEC0 /* ContentView.swift in Sources */,
